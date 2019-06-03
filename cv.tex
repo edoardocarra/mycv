@@ -37,6 +37,7 @@
 \usepackage{sectsty} % Allows changing the font options for sections in a document
 \usepackage[normalem]{ulem} % Custom underlining
 \usepackage{xunicode} % Allows generation of unicode characters from accented glyphs
+\usepackage{tikz}
 \defaultfontfeatures{Mapping=tex-text} % Converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
 
 \usepackage{marginnote} % For margin years
@@ -75,12 +76,20 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
+\begin{tikzpicture}[remember picture, overlay]
+  \node [anchor=north east, inner sep=100pt]  at (current page.north east)
+     {\includegraphics[height=2.5cm]{cv.jpg}};
+\end{tikzpicture}
 
 %----------------------------------------------------------------------------------------
 %	CONTACT AND GENERAL INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 {\LARGE Edoardo Carra}\\[1cm] % Your name
+
+\vfill % Whitespace between contact information and specific CV information
+
+\vfill % Whitespace between contact information and specific CV information
 
 Computer Science Department - Sapienza University of Rome\\ % Your address
 Via Salaria 113\\
@@ -115,7 +124,7 @@ Scripting and beer addicted.
 
 \section*{Areas of specialization}
 
-Engineering in Computer Science; Computer Graphics Systems; 3D Version Control % Your primary areas of research interest
+Engineering in Computer Science; Developing tools for Computer Graphics; 3D Version Control; Handling out-of-core 3D environments % Your primary areas of research interest
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
