@@ -24,13 +24,15 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt, a4paper]{article} % Document font size and paper size
+\documentclass[10pt, a4paper]{article} % Document font size and paper size
 
 \usepackage{fontspec} % Allows the use of OpenType fonts
 
 \usepackage{geometry} % Allows the configuration of document margins
-\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
+\geometry{a4paper, textwidth=6in, textheight=10in, marginparsep=7pt, marginparwidth=.6in} % Document margin settings
 \setlength\parindent{0in} % Remove paragraph indentation
+
+\pagenumbering{gobble}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Custom colors
 
@@ -46,7 +48,7 @@
 \setlength{\marginparsep}{7pt} % Slightly increase the distance of the margin years from the contant
 \reversemarginpar
 
-\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Albert Einstein - vita},pdfauthor={Edoardo Carra}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
+\usepackage[xetex, bookmarks, colorlinks, breaklinks, pdftitle={Edoardo Carra - vita},pdfauthor={Edoardo Carra}]{hyperref} % PDF setup - set your name and the title of the document to be incorporated into the final PDF file meta-information
 \hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} % Link colors
 
 %----------------------------------------------------------------------------------------
@@ -76,62 +78,34 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-\begin{tikzpicture}[remember picture, overlay]
-  \node [anchor=north east, inner sep=100pt]  at (current page.north east)
-     {\includegraphics[height=2.5cm]{cv.jpg}};
-\end{tikzpicture}
+
+%\begin{tikzpicture}[remember picture, overlay]
+%  \node [anchor=north east, inner sep=100pt]  at (current page.north east)
+%     {\includegraphics[height=2.5cm]{cv.jpg}};
+%\end{tikzpicture}
 
 %----------------------------------------------------------------------------------------
 %	CONTACT AND GENERAL INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
-{\LARGE Edoardo Carra}\\[1cm] % Your name
+{\LARGE Edoardo Carra}\\ % Your name
 
-\vfill % Whitespace between contact information and specific CV information
-
-Computer Science Department - Sapienza University of Rome\\ % Your address
-Via Salaria 113\\
-Rome \texttt{00198}
-Italy\\[.2cm]
 Phone: \texttt{+39 3319733470}\\ % Your phone number
 %Fax: \texttt{609-924-8399}\\[.2cm] % Your fax number
-Email: \href{mailto:carra@di.uniroma1.it}{carra@di.uniroma1.it}\\ % Your email address
-Skype: \href{https://join.skype.com/invite/gQN9qtZGLZ7r}{live:carra\_127}\\
-LinkedIn: \href{https://www.linkedin.com/in/edoardocarra/}{https://www.linkedin.com/in/edoardocarra}\\ % Your academic/personal website
-
-\vfill % Whitespace between contact information and specific CV information
+Email: \href{mailto:edo.carra@gmail.com}{edo.carra@gmail.com}\\ % Your email address
+Skype: \href{https://join.skype.com/invite/gQN9qtZGLZ7r}{carra\_127}\\
+LinkedIn: \href{https://www.linkedin.com/in/edoardocarra/}{https://bit.ly/2KwFBBK}\\ % Your academic/personal website
 
 %------------------------------------------------
 
 Born: July 16, 1991---Rome, Italy\\ % Your date of birth
 Nationality: Italian\\ % Your nationality
-Languages: Italian mother tongue, english fluency\\
+Languages: Italian mother tongue, english fluency
 
 %------------------------------------------------
 \section*{About me}
 
-I don't like reinventing the wheel. Advanced in designing and implementing tools for 2D and 3D digital artists. Mostly coding in C++ and Python, and familiar with web-oriented technologies.
-Scripting and beer addicted.
-
-%------------------------------------------------
-
-\section*{Current position}
-
-\emph{PhD Candidate} in \emph{Computer Graphics}, Computer Science Department, Sapienza University of Rome % Your current or previous employment position
-
-%------------------------------------------------
-
-\section*{Areas of specialization}
-
-Engineering in Computer Science; Developing tools for Computer Graphics; 3D Version Control; Handling out-of-core 3D environments % Your primary areas of research interest
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section*{Appointments held}
-
-\years{2012} Developer, Sira srl, Rome\\
+I love creating tools for digital artists. During the PhD i learned to prototype and implement systems always considering out-of-core 3D environments as test case. In the past years i gained some experience in web-oriented graphics, designing and implementing methods for delivering computationally demanding 3D environments on a browser window. I mostly code in C++ and Python, but i can easily switch on web-oriented technologies. I like long walks, big beers, and talking (a lot) about food.
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
@@ -139,55 +113,46 @@ Engineering in Computer Science; Developing tools for Computer Graphics; 3D Vers
 
 \section*{Education}
 
-\years{2016}\textsc{MSc} in Engineering in Computer Science, Roma Tre University\\
+\years{2016 - now} \textsc{PhD} in Computer Graphics, Sapienza University of Rome, [supervisor: Fabio Pellacini] \emph{"Multi-user collaboration in digital content creation"}\\ % Your current or previous employment position
+\years{2016}\textsc{MSc} in Engineering in Computer Science, Roma Tre University, \emph{"Production techniques and tools for creating photorealistic environments over web"}
 
 %----------------------------------------------------------------------------------------
-%	GRANTS, HONORS AND AWARDS SECTION
+%	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Grants, honors \& awards}
+\section*{Technical skills}
 
-\years{2018} Funding for scientific research, Sapienza Research Calls\\
-\years{2016} Funding from Sogei S.p.A, Italian Ministry of Economy and Finance\\
+ \textbf{programming language} C++, Python $\bullet$ \textbf{web} JavaScript, TypeScript, NodeJS, HTML5, CSS3 $\bullet$ \textbf{source control} Git $\bullet$ \textbf{computer graphics api} OpenGL, WebGL $\bullet$ \textbf{3d format} glTF, FBX, OBJ $\bullet$ \textbf{database} PostgreSQL, MongoDB $\bullet$ \textbf{operating system} Windows, macOS and Linux (Bash scripting) $\bullet$ \textbf{tools} CMake, Vim, FFmpeg, ImageMagick $\bullet$ \textbf{software} Unity, Blender
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section*{Appointments held}
+
+\years{2019} Tutor, Physics Programming, Masters degree course in Computer Game Development, University of Verona\\
+\years{2016} Assistant Tutor, Computer Graphics course, \textsc{MSc} in Engineering in Computer Science, Roma Tre University\\
+\years{2012} Developer, Sira srl, Rome
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS AND TALKS SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Publications \& talks}
-
-\subsection*{Journal articles}
+\section*{Publications}
 
 \years{2019} Edoardo Carra, Christian Santoni, Fabio Pellacini, \emph{Grammar-based procedural animations for motion graphics}, Computers \& Graphics, Volume 78, February 2019, Pages 97-107\\
-
-%------------------------------------------------
-
-\subsection*{Conference papers}
-
 \years{2018} Edoardo Carra, Christian Santoni, Fabio Pellacini, \emph{gMotion: A Spatio-Temporal Grammar for the Procedural Generation of Motion Graphics}, Proceedings of Graphics Interface 2018: Toronto, Ontario, May 8 - 11 2018\\
-\years{2016} Federico Spini, Enrico Marino, Michele D'Antimi, Edoardo Carra, Alberto Paoluzzi, \emph{Web 3D indoor authoring and VR exploration via texture baking service}, Proceedings of the 21st International Conference on Web3D Technology: Anaheim, California, July 22 - 24 2016\\
-
-%------------------------------------------------
-
-%\subsection*{Newspaper articles}
-
-%\years{1940}Einstein, Albert, et al. (December 4, 1948), “To the editors", \emph{New York Times}\\
-%\years{1949}Einstein, Albert (May 1949), “Why Socialism?", \emph{Monthly Review}.
+\years{2016} Federico Spini, Enrico Marino, Michele D'Antimi, Edoardo Carra, Alberto Paoluzzi, \emph{Web 3D indoor authoring and VR exploration via texture baking service}, Proceedings of the 21st International Conference on Web3D Technology: Anaheim, California, July 22 - 24 2016
 
 %----------------------------------------------------------------------------------------
-%	TEACHING SECTION
+%	GRANTS, HONORS AND AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section*{Teaching}
+\section*{Fundings}
 
-\years{2019} Tutor, Physics Programming, Masters degree course in Computer Game Development, University of Verona\\
-\years{2016} Assistant Tutor, Computer Graphics course, \textsc{MSc} in Engineering in Computer Science, Roma Tre University\\
+\years{2018} Funding for scientific research, Sapienza Research Calls\\
+\years{2016} Funding from Sogei S.p.A, Italian Ministry of Economy and Finance\\
 
-%------------------------------------------------
-
-%\section*{Service to the profession}
-
-%...
 
 \vfill{} % Whitespace before final footer
 
@@ -196,7 +161,7 @@ Engineering in Computer Science; Developing tools for Computer Graphics; 3D Vers
 %----------------------------------------------------------------------------------------
 
 \begin{center}
-{\scriptsize In accordance to art. 13 GDPR 679/16, and art. 15 Lgs.D. no. 33/2013 I hereby authorize you to use and process my personal details contained in this document.\\ Last updated: \today} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
+{\scriptsize I hereby authorize the use of my personal data in accordance to the GDPR 679/16.} % Any final footer text such as a URL to the latest version of your CV, last updated date, compiled in XeTeX, etc
 \end{center}
 
 %----------------------------------------------------------------------------------------
