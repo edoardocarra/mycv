@@ -1,0 +1,253 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\Huge Edoardo Carra}\\\medskip % Your name
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{Doctoral Research}
+
+{\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\\\medskip}
+
+My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\workposition{Current, from Jan 1995} % Duration
+{FT} % FT/PT (full time or part time)
+{Black Mesa Research Facility} % Employer
+{Team Leader (Anomalous Materials)} % Job title
+{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
+
+%------------------------------------------------
+
+\workposition{Feb 1991 -- Jan 1995} % Duration
+{FT} % FT/PT (full time or part time)
+{Black Mesa Research Facility} % Employer
+{Level 3 Research Associate} % Job title
+{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.}  % Description
+
+%------------------------------------------------
+
+\workposition{Jul 1982 -- Dec 1984} % Duration
+{PT} % FT/PT (full time or part time)
+{WashPests Limited} % Employer
+{Pest Control Technician} % Job title
+{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & P.O. Box 3985, Black Mesa Drive, NM 87545 \\ % Address
+			\raisebox{-1pt}{\faPhone} & +1 (800) 786-1410 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:g.freeman@bmrf.us}{g.freeman@bmrf.us} \\ % Email address
+			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}[rl]
+
+	%------------------------------------------------
+	
+	\item{2016 -- now} % Duration
+	{PhD in Computer Graphics} % Degree
+	{[supervisor: Fabio Pellacini] Multi-user collaboration in digital content creation} % Honours, achievements or distinctions (e.g. first class honours)
+	{}
+	{Sapienza University of Rome} % Institution
+	
+	%------------------------------------------------
+	
+	\item{2016} % Duration
+	{MSc in Engineering in Computer Science} % Degree
+	{Production techniques and tools for creating photorealistic environments over web} % Honours, achievements or distinctions (e.g. first class honours)
+	{110/110 with honour}
+	{Roma Tre University} % Institution
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Main Interest}
+
+Design, architecture, implementation, and user validation of development tools for 2D and 3D digital artists.
+
+%----------------------------------------------------------------------------------------
+%	SKILLS DESCRIPTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+% Example \longformdescription{} command to add another section:
+
+%\longformdescription{Heading}{Description}
+
+%------------------------------------------------
+
+\longformdescription{Development}{Advanced understanding of \textbf{C++}, with confidence in debugging, performance analysis and code optimization. Proficiency with scripting languages (\textbf{Python},Bash). Strong \textbf{data-structure}, and \textbf{algorithm} skills. Confidence with \textbf{data-oriented} and \textbf{object-oriented} design.}
+
+\longformdescription{Computer Graphics}{Detailed knowledge of 3D graphics. Experience with \textbf{algorithms} and \textbf{data-structures} to provide scalability and performances with \textbf{out-of-core } 3D environments. Confidence with \textbf{OpenGL} and \textbf{Vulkan}.}
+
+\longformdescription{Web Applications}{Experience with programming, debugging and profiling \textbf{JavaScript} applications in major browsers, and knowledge of tooling and package management (\textbf{NodeJS}, NPM).}
+
+\longformdescription{Miscellaneous}{Experience with \textbf{SQL} databases -- database design, query design, and programming language bindings. \textbf{Linux} and \textbf{MacOS} development experience. Experience with modern source control systems, such as Subversion, \textbf{Git}, or Perforce. Familiarity with HTTP/S and basic networking concepts
+}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+% Example \longformdescription{} command to add another publication:
+
+%\longformpublication{Reference (format this manually as desired)}
+
+%------------------------------------------------
+
+\longformpublication{Edoardo Carra, Valentina Tibaldo, Fabio Pellacini. Collaborative image editing: workflow evaluation and a practical solution. \textit{[Preparing for submission] ACM Transaction on Graphics}.}
+
+\longformpublication{Edoardo Carra, Fabio Pellacini (2019). SceneGit: A Practical System for Diffing and Merging 3D Environments. \textit{ACM Transaction on Graphics (SIGGRAPH ASIA 2019)}, \textit{38}(6), Article 159 (November 2019).}
+
+\longformpublication{Edoardo Carra, Christian Santoni, Fabio Pellacini (2019). Grammar-based procedural animations for motion graphics. \textit{Computers \& Graphics}, \textit{78}, February 2019, Pages 97-107.}
+
+\longformpublication{Edoardo Carra, Christian Santoni, Fabio Pellacini (2018). gMotion: A Spatio-Temporal Grammar for the Procedural Generation of Motion Graphics. \textit{Proceedings of Graphics Interface 2018}, Toronto, Ontario, May 8 - 11 2018.}
+
+\longformpublication{Federico Spini, Enrico Marino, Michele D'Antimi, Edoardo Carra, Alberto Paoluzzi (2016). Web 3D indoor authoring and VR exploration via texture baking service. \textit{Proceedings of the 21st International Conference on Web3D Technology}, Anaheim, California, July 22 - 24 2016.}
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+	\tableentry{2018}{\textbf{Funding for scientific research, 
+	Sapienza Research Calls}}{}
+	\tableentry{}{\textit{Sapienza University of Rome}}{spaceafter}
+	
+	%------------------------------------------------
+	
+	\tableentry{2016}{\textbf{Funding from Sogei S.p.A, Italian 
+	Ministry of Economy and Finance}}{}
+	\tableentry{}{\textit{Roma Tre University}}{spaceafter}
+	
+	%------------------------------------------------
+	
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
