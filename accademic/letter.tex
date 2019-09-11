@@ -1,0 +1,88 @@
+\documentclass[acmlarge]{acmart}
+
+% Use the "authoryear" citation style, and make sure citations are in [square brackets].
+\citestyle{acmauthoryear}
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+
+\settopmatter{printacmref=false} % Removes citation information below abstract
+\renewcommand\footnotetextcopyrightpermission[1]{} % removes footnote with conference information in first column
+
+\hypersetup{draft}
+\begin{document}
+
+% Title. 
+% If your title is long, consider \title[short title]{full title} - "short title" will be used for running heads.
+\title{Of all to the people who are gonna tell you "take meee, i'm skilled, i write sickeningly performant code with both the hands tied and the eye closed", why you should choose me?}
+\maketitle
+
+First of all thank you for reading this letter. 
+My points will be not very strong, since my background is only accademic until now. I'm strongly motivated to learn the industry, and make myself fit at best inside it. I want true artist use our tools,  I can give to you discipline, and respect for achieving goals in time and in the exact way they were supposed to be achieved. 
+
+
+Dear reviewers,
+but all i did
+we write this letter to highlight the differences in this resubmission of our work.
+The main improvements in this submission are in response to the requests made 
+in the summary review, namely to perform direct comparisons withe prior work,
+validate our results with a user study, provide more details on the implementation and
+clarify our technical contributions. 
+We believe we have address all these issues as summarized below.
+
+\begin{enumerate}
+
+\item \textbf{Comparisons (Sect. 7)} 
+For the comparison with prior work, we stress that to the best of knowledge 
+there is no other system that can version whole 3D environments. Since we were 
+not asked for a specific comparison, we chose the prior systems that we felt
+are more related to our work. We compare to MeshGit [Denning and Pellacini, 2013]
+for polygonal meshes, JsonDiffPatch for scene nodes, Git for generic version 
+control, and Plastic SCM since it has been adopted in industry for versioning 
+game scenes and asset. Compared to these systems, we are significantly more 
+efficient, scale better, and, more importantly, our system was the only one that 
+could reliably merged all edits without incurring in mis-detected conflicts.
+Said another way, we show that our system is the only one that can version 3D 
+scenes reliably.
+
+\item \textbf{User Study (Sect. 7)}
+We also validated our system with a user study where we simulate a collaborative 
+workflow. Users performed free form edits to a few scenes, and used
+our system both to view changes using highlights and to merge. In both cases,
+our system was rated as very high, showing that our work will likely have 
+uses in collaborative workflows and foster future work in this area.
+
+\item \textbf{Technical Contributions (Sect. 1)}
+We stress here that this work is a system paper. In our opinion, the hallmark 
+of a good system paper is to define a practical problem in our field (Sect. 1), 
+present and motivate a system design that solves that problem (Sect. 3, 4 and 5),
+and analyze the system performance in non-trivial cases (Sect. 6, 7). When pressed 
+to list specific points of technical contribution, we believe we have 
+introduced the first data structure for scene versioning and reliable algorithms 
+for diffing and merging algorithms, as listed in Sect 1. 
+We want to stress though that we believe that our main contribution is in 
+characterizing the version control problem for 3D scenes, presenting an overall 
+system design to address it, and showing a solution that works reliably 
+on different scenes and edits.
+Again, to the best of our knowledge, there is no other system, in the literature
+or commercial, that can handle the edits in this paper.
+
+\item \textbf{Paper Presentation (Sect. 5, Supplemental)}
+We include several small changes suggested by reviewers together with 
+pseudo-code for the underlying algorithms to give more details on the actual 
+implementation. The pseudo-code is included in supplemental to save space. 
+If the paper were to be accepted, we will release a open source
+implementation too, that is not included here to maintain anonymity.
+
+\item \textbf{System Implementation (Sect. 6)}
+We further improved our implementation by using better compression methods
+for the final repository and further tested the system on a larger forest
+environment (Fig. 8).
+
+\end{enumerate}
+
+\end{document}
